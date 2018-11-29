@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Contrato:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Contrato_jar</output-path>
+    <root id="archive" name="Contrato-2.jar">
+      <element id="module-output" name="MyEnderecoBO" />
+      <element id="module-output" name="Contrato" />
+      <element id="module-output" name="MyContratoBO" />
+      <element id="module-output" name="MyPessoaBO" />
+      <element id="module-output" name="MyContratoServicos" />
+      <element id="module-output" name="MyInfra" />
+      <element id="module-output" name="MyEnderecoServicos" />
+      <element id="module-output" name="MyPessoaServicos" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-reflect.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-test.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

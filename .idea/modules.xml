@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Contrato.iml" filepath="$PROJECT_DIR$/Contrato.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyContratoBO/MyContratoBO.iml" filepath="$PROJECT_DIR$/MyContratoBO/MyContratoBO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyContratoServicos/MyContratoServicos.iml" filepath="$PROJECT_DIR$/MyContratoServicos/MyContratoServicos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyEnderecoBO/MyEnderecoBO.iml" filepath="$PROJECT_DIR$/MyEnderecoBO/MyEnderecoBO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyEnderecoServicos/MyEnderecoServicos.iml" filepath="$PROJECT_DIR$/MyEnderecoServicos/MyEnderecoServicos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyInfra/MyInfra.iml" filepath="$PROJECT_DIR$/MyInfra/MyInfra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyPessoaBO/MyPessoaBO.iml" filepath="$PROJECT_DIR$/MyPessoaBO/MyPessoaBO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyPessoaServicos/MyPessoaServicos.iml" filepath="$PROJECT_DIR$/MyPessoaServicos/MyPessoaServicos.iml" />
+    </modules>
+  </component>
+</project>
