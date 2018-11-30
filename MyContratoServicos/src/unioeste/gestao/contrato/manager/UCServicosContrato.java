@@ -6,11 +6,14 @@ import unioeste.geral.pessoa.fisica.bo.PessoaFisica;
 import unioeste.geral.pessoa.juridica.bo.PessoaJuridica;
 import unioeste.gestao.contrato.contrato.col.ColContrato;
 
+import java.sql.SQLException;
+
 public class UCServicosContrato {
 
     public UCServicosContrato() {}
 
-    public Contrato cadastrarContrato(Contrato contrato) throws Exception{
+    // TODO: REFAZER
+    public Contrato cadastrarContrato(Contrato contrato) throws NegocioException {
         ColContrato colCon = new ColContrato();
         UCServicosCliente servicosCliente = new UCServicosCliente();
 
@@ -27,18 +30,22 @@ public class UCServicosContrato {
             }
 
             if (colCon.obterQtdeContratoPorCliente(contrato.getDataEmissao().toString(), documento) > 2){
-                throw new Exception("Limite de contratos validos atingido.");
+                throw new NegocioException("Limite de contratos validos atingido.");
             }
 
             ConexaoBD conexao = new ConexaoBD();
             colCon.inserirContrato(contrato);
-            conexao.getConexaoMySQL().commit();
+            try {
+                conexao.getConexaoMySQL().commit();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
 
         return contrato;
     }
 
-    public Contrato consultarContratoPorNumero(Long id) throws Exception {
+    public Contrato consultarContratoPorNumero(Long id) throws NegocioException {
         return null;
     }
 }
