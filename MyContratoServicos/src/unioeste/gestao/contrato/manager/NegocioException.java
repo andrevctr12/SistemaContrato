@@ -2,13 +2,13 @@ package unioeste.gestao.contrato.manager;
 
 public class NegocioException extends Exception {
 
-    public NegocioException() { super(); }
+    public NegocioException() { super("[NEGÓCIO] "); }
 
     public NegocioException(String message) {
-        super(message);
+        super("[NEGÓCIO] " + message);
     }
 
-    public NegocioException(String message, Throwable cause) { super(message, cause); }
+    public NegocioException(String message, Throwable cause) { super("[NEGÓCIO] " + message, cause); }
 
-    public NegocioException(Throwable cause) { super(cause); }
+    public NegocioException(Throwable cause) { super("[NEGÓCIO] ", cause); }
 }

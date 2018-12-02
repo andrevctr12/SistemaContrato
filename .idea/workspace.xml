@@ -7,10 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a4237b6-c5ac-4f03-b400-a731592c45e4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/ServicoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/ColContrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/ContratoCol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/TipoContratoCol.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/TipoContratoCol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/TipoContratoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/TipoContratoDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/NegocioException.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/NegocioException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosContrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosContrato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosEndereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosEndereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyInfra/src/unioeste/geral/infra/ConexaoBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyInfra/src/unioeste/geral/infra/ConexaoBD.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,22 +64,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="221" />
+          <entry key="dummy" value="12" />
+          <entry key="java" value="1048" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="221" />
+          <entry key="JAVA" value="1048" />
+          <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
     </session>
@@ -84,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosCliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
+            <state relative-caret-position="366">
               <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -96,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosContrato.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+            <state relative-caret-position="538">
+              <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,22 +113,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/ColContrato.java">
+        <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/ServicoException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="e#212#213#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosEndereco.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -130,56 +129,77 @@
         <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/NegocioException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
               <folding>
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
+                <element signature="e#194#195#0" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/ContratoCol.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyContratoBO/src/unioeste/contrato/cliente/bo/Cliente.java">
+        <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/ContratoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+            <state relative-caret-position="51">
+              <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyContratoBO/src/unioeste/contrato/contrato/bo/Contrato.java">
+        <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/TipoContratoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="254">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/TipoContratoCol.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyInfra/src/unioeste/geral/infra/ConexaoBD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyContratoBO/src/unioeste/contrato/contrato/bo/TipoContrato.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyPessoaBO/src/unioeste/geral/pessoa/bo/Telefone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyPessoaBO/src/unioeste/geral/pessoa/bo/Pessoa.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -201,16 +221,12 @@
       <list>
         <option value="$PROJECT_DIR$/MyContratoBO/src/unioeste/contrato/contrato/bo/TipoContrato.java" />
         <option value="$PROJECT_DIR$/MyPessoaBO/src/unioeste/geral/pessoa/juridica/bo/CNPJ.java" />
-        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/TipoContratoDao.java" />
-        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/TipoContratoCol.java" />
         <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/ColContrato.java" />
         <option value="$PROJECT_DIR$/MyPessoaServicos/src/unioeste/geral/pessoa/fisica/col/ColGenero.java" />
-        <option value="$PROJECT_DIR$/MyInfra/src/unioeste/geral/infra/ConexaoBD.java" />
         <option value="$PROJECT_DIR$/MyEnderecoServicos/src/unioeste/geral/endereco/dao/dao.iml" />
         <option value="$PROJECT_DIR$/MyPessoaServicos/src/unioeste/geral/pessoa/unioeste/geral/pessoa/fisica/ColGenero.java" />
         <option value="$PROJECT_DIR$/MyPessoaServicos/src/unioeste/geral/pessoa/fisica/ColGenero.java" />
         <option value="$PROJECT_DIR$/MyEnderecoServicos/src/unioeste/geral/endereco/col/ColEndereco.java" />
-        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/ContratoDao.java" />
         <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/cliente/col/ColCliente.java" />
         <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/cliente/dao/ClienteDao.java" />
         <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/cliente/col/ColFoneCliente.java" />
@@ -219,11 +235,17 @@
         <option value="$PROJECT_DIR$/MyPessoaBO/src/unioeste/geral/pessoa/fisica/bo/PessoaFisica.java" />
         <option value="$PROJECT_DIR$/MyPessoaBO/src/unioeste/geral/pessoa/juridica/bo/PessoaJuridica.java" />
         <option value="$PROJECT_DIR$/MyContratoBO/src/unioeste/contrato/cliente/bo/Cliente.java" />
-        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/NegocioException.java" />
         <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosEndereco.java" />
         <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosCliente.java" />
-        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosContrato.java" />
         <option value="$PROJECT_DIR$/MyContratoBO/src/unioeste/contrato/contrato/bo/Contrato.java" />
+        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/ContratoDao.java" />
+        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/TipoContratoDao.java" />
+        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/ServicoException.java" />
+        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/NegocioException.java" />
+        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosContrato.java" />
+        <option value="$PROJECT_DIR$/MyInfra/src/unioeste/geral/infra/ConexaoBD.java" />
+        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/TipoContratoCol.java" />
+        <option value="$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/ContratoCol.java" />
       </list>
     </option>
   </component>
@@ -254,40 +276,6 @@
             <path>
               <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
               <item name="Contrato" type="462c0819:PsiDirectoryNode" />
-              <item name="MyContratoBO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
-              <item name="MyContratoBO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
-              <item name="MyContratoBO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="contrato" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
-              <item name="MyContratoBO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="contrato" type="462c0819:PsiDirectoryNode" />
-              <item name="bo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
-              <item name="MyContratoBO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="contrato" type="462c0819:PsiDirectoryNode" />
-              <item name="bo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
               <item name="MyContratoServicos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,6 +290,32 @@
               <item name="MyContratoServicos" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="contrato" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="MyContratoServicos" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="contrato" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="MyContratoServicos" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="col" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="MyContratoServicos" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
@@ -310,6 +324,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="contrato" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="MyInfra" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="MyInfra" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Contrato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Contrato" type="462c0819:PsiDirectoryNode" />
+              <item name="MyInfra" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="infra" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,7 +354,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543543738984" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543788556236" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -390,12 +422,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542902559795</updated>
       <workItem from="1543489028215" duration="6382000" />
-      <workItem from="1543502332933" duration="6139000" />
+      <workItem from="1543502332933" duration="12917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12521000" />
+    <option name="totallyTimeSpent" value="19299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="803" extended-state="0" />
@@ -470,27 +502,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyInfra/src/unioeste/geral/infra/ConexaoBD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/TipoContratoCol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="75" lean-forward="true" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyContratoBO/MyContratoBO.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyPessoaBO/src/unioeste/geral/pessoa/bo/DDD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -570,16 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/TipoContratoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyEnderecoBO/src/unioeste/geral/endereco/bo/Bairro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -650,16 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="17" column="74" lean-forward="true" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/ContratoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="82" column="59" lean-forward="true" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,51 +761,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/NegocioException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosEndereco.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosContrato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/ColContrato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosCliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,6 +786,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/ContratoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/NegocioException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <folding>
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/UCServicosContrato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/dao/TipoContratoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/manager/ServicoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInfra/src/unioeste/geral/infra/ConexaoBD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/TipoContratoCol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyContratoServicos/src/unioeste/gestao/contrato/contrato/col/ContratoCol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

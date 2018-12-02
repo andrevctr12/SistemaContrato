@@ -3,21 +3,22 @@ package unioeste.gestao.contrato.contrato.col;
 import unioeste.contrato.contrato.bo.Contrato;
 import unioeste.geral.infra.ConexaoBD;
 import unioeste.gestao.contrato.contrato.dao.ContratoDao;
+import unioeste.gestao.contrato.manager.NegocioException;
 
-public class ColContrato {
+public class ContratoCol {
 
     public Long inserirContrato(Contrato contrato){
         ContratoDao dao = new ContratoDao();
-        ConexaoBD conexaobd = new ConexaoBD();
+        ConexaoBD conexaoBD = new ConexaoBD();
 
         Long id;
 
-        id = dao.cadastraContrato(contrato, conexaobd.getConexaoMySQL());
-
+        id = dao.cadastraContrato(contrato, conexaoBD.getConexaoMySQL());
+        conexaoBD.closeConexaoMySQL();
         return id;
     }
 
-    public Contrato obterContratoPorNumero(Long id) throws Exception {
+    public Contrato obterContratoPorNumero(Long id) throws NegocioException {
 
         ContratoDao dao = new ContratoDao();
 
@@ -26,9 +27,9 @@ public class ColContrato {
         Contrato contrato = dao.buscaContratoPorNumero(id, conexaoBD.getConexaoMySQL());
 
         if (contrato == null) {
-            throw new Exception ("Contrato nao existe");
+            throw new NegocioException("Contrato nao existe");
         }
-
+        conexaoBD.closeConexaoMySQL();
         return contrato;
     }
 

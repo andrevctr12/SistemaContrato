@@ -43,5 +43,13 @@ public class ConexaoBD {
         return connection;
     }
 
+    public void closeConexaoMySQL() {
+        try {
+            this.connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
 
