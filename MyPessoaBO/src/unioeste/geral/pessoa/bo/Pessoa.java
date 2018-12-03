@@ -6,19 +6,11 @@ import java.io.Serializable;
 import java.util.List;
 
 public abstract class Pessoa implements Serializable {
-    private Long id;
+
     private String nomeCompleto;
     private List<Email> emails;
     private List<Telefone> telefones;
     private EnderecoEspecifico endereco;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getNomeCompleto() {
         return nomeCompleto;
@@ -55,7 +47,6 @@ public abstract class Pessoa implements Serializable {
     @Override
     public String toString() {
         return "Pessoa{" +
-                "id=" + id +
                 ", nomeCompleto='" + nomeCompleto + '\'' +
                 ", emails=" + emails +
                 ", telefones=" + telefones +

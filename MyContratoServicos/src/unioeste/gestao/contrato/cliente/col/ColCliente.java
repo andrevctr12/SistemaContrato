@@ -25,6 +25,8 @@ public class ColCliente {
             throw new Exception ("Cliente nao existe");
         }
 
+        conexaoBD.closeConexaoMySQL();
+
         // Retornar cliente.
         return cliente;
     }
@@ -45,6 +47,9 @@ public class ColCliente {
         }
 
         // Retornar cliente.
+
+        conexaoBD.closeConexaoMySQL();
+
         return cliente;
     }
 

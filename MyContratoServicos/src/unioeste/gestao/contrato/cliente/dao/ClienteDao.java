@@ -113,19 +113,19 @@ public class ClienteDao {
                 cliente.setPessoa(pessoaFisica);
 
                 cliente.getPessoa().setNomeCompleto(r.getString("nome"));
-                cliente.getPessoa().setId(r.getLong("idCliente"));
+                cliente.setId(r.getLong("idCliente"));
 
 
                 EmailDao emailDao =  new EmailDao();
-                cliente.getPessoa().setEmails(emailDao.buscaEmail(cliente.getPessoa().getId(),c));
+                cliente.getPessoa().setEmails(emailDao.buscaEmail(cliente.getId(),c));
 
                 TelefoneDao telefoneDao = new TelefoneDao();
-                cliente.getPessoa().setTelefones(telefoneDao.buscaTel(cliente.getPessoa().getId(),c));
+                cliente.getPessoa().setTelefones(telefoneDao.buscaTel(cliente.getId(),c));
 
                 EnderecoDao enderecoDao = new EnderecoDao();
 
                 cliente.getPessoa().setEndereco(new EnderecoEspecifico());
-                cliente.getPessoa().getEndereco().setEndereco(enderecoDao.buscaEnderecoById(cliente.getPessoa().getId(),c));
+                cliente.getPessoa().getEndereco().setEndereco(enderecoDao.buscaEnderecoById(cliente.getId(),c));
                 cliente.getPessoa().getEndereco().setComplemento(r.getString("complemento"));
                 cliente.getPessoa().getEndereco().setNro(r.getInt("nro"));
                 cliente.setSenha(r.getString("senha"));
@@ -158,19 +158,19 @@ public class ClienteDao {
                 cliente.setPessoa(pessoaJuridica);
 
                 cliente.getPessoa().setNomeCompleto(r.getString("nome"));
-                cliente.getPessoa().setId(r.getLong("idCliente"));
+                cliente.setId(r.getLong("idCliente"));
 
 
                 EmailDao emailDao =  new EmailDao();
-                cliente.getPessoa().setEmails(emailDao.buscaEmail(cliente.getPessoa().getId(),c));
+                cliente.getPessoa().setEmails(emailDao.buscaEmail(cliente.getId(),c));
 
                 TelefoneDao telefoneDao = new TelefoneDao();
-                cliente.getPessoa().setTelefones(telefoneDao.buscaTel(cliente.getPessoa().getId(),c));
+                cliente.getPessoa().setTelefones(telefoneDao.buscaTel(cliente.getId(),c));
 
                 EnderecoDao enderecoDao = new EnderecoDao();
 
                 cliente.getPessoa().setEndereco(new EnderecoEspecifico());
-                cliente.getPessoa().getEndereco().setEndereco(enderecoDao.buscaEnderecoById(cliente.getPessoa().getId(),c));
+                cliente.getPessoa().getEndereco().setEndereco(enderecoDao.buscaEnderecoById(cliente.getId(),c));
                 cliente.getPessoa().getEndereco().setComplemento(r.getString("complemento"));
                 cliente.getPessoa().getEndereco().setNro(r.getInt("nro"));
                 cliente.setSenha(r.getString("senha"));
@@ -229,19 +229,19 @@ public class ClienteDao {
                 }
 
                 cliente.getPessoa().setNomeCompleto(r.getString("nome"));
-                cliente.getPessoa().setId(r.getLong("idCliente"));
+                cliente.setId(r.getLong("idCliente"));
 
 
                 EmailDao emailDao = new EmailDao();
-                cliente.getPessoa().setEmails(emailDao.buscaEmail(cliente.getPessoa().getId(), c));
+                cliente.getPessoa().setEmails(emailDao.buscaEmail(cliente.getId(), c));
 
                 TelefoneDao telefoneDao = new TelefoneDao();
-                cliente.getPessoa().setTelefones(telefoneDao.buscaTel(cliente.getPessoa().getId(), c));
+                cliente.getPessoa().setTelefones(telefoneDao.buscaTel(cliente.getId(), c));
 
                 EnderecoDao enderecoDao = new EnderecoDao();
 
                 cliente.getPessoa().setEndereco(new EnderecoEspecifico());
-                cliente.getPessoa().getEndereco().setEndereco(enderecoDao.buscaEnderecoById(cliente.getPessoa().getId(), c));
+                cliente.getPessoa().getEndereco().setEndereco(enderecoDao.buscaEnderecoById(cliente.getId(), c));
                 cliente.getPessoa().getEndereco().setComplemento(r.getString("complemento"));
                 cliente.getPessoa().getEndereco().setNro(r.getInt("nro"));
                 cliente.setSenha(r.getString("senha"));
