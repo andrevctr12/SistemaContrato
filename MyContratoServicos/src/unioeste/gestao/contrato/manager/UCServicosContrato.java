@@ -1,49 +1,51 @@
 package unioeste.gestao.contrato.manager;
 
+import unioeste.contrato.cliente.bo.Cliente;
 import unioeste.contrato.contrato.bo.Contrato;
 import unioeste.contrato.contrato.bo.TipoContrato;
 import unioeste.geral.infra.ConexaoBD;
+import unioeste.geral.infra.ServerDate;
 import unioeste.geral.pessoa.fisica.bo.PessoaFisica;
 import unioeste.geral.pessoa.juridica.bo.PessoaJuridica;
+import unioeste.gestao.contrato.cliente.col.ColCliente;
 import unioeste.gestao.contrato.contrato.col.ContratoCol;
 import unioeste.gestao.contrato.contrato.col.TipoContratoCol;
 
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class UCServicosContrato {
 
     public UCServicosContrato() {}
 
-    // TODO: REFAZER
-    public Contrato cadastrarContrato(Contrato contrato) throws ServicoException {
+    public Contrato cadastrarContrato(Contrato contrato) throws Exception {
         ContratoCol colCon = new ContratoCol();
-        UCServicosCliente servicosCliente = new UCServicosCliente();
+        ColCliente colCli = new ColCliente();
 
-        try {
-            servicosCliente.cadastrarCliente(contrato.getCliente());
-        } catch (Exception e){
-            throw new ServicoException();
-        }
-            String documento = "";
-            if (contrato.getCliente().getPessoa() instanceof PessoaFisica){
-                documento = ((PessoaFisica) contrato.getCliente().getPessoa()).getCpf().getCpf();
-            }
-            if (contrato.getCliente().getPessoa() instanceof PessoaJuridica){
-                documento = ((PessoaJuridica) contrato.getCliente().getPessoa()).getCnpj().getCnpj();
-            }
+        TipoContratoCol colTipo = new TipoContratoCol();
 
-            if (colCon.obterQtdeContratoPorCliente(contrato.getDataEmissao().toString(), documento) > 2){
-                throw new ServicoException("Limite de contratos validos atingido.");
-            }
+        LocalDate localDate = LocalDate.now();
+        String formattedString = localDate.format(ServerDate.formatter());
+        contrato.setDataEmissao(formattedString);
 
-            ConexaoBD conexao = new ConexaoBD();
-            colCon.inserirContrato(contrato);
-            try {
-                conexao.getConexaoMySQL().commit();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+        Cliente cliente = colCli.obterClientePorId(contrato.getCliente().getId());
+
+        TipoContrato tipoContrato = colTipo.obterTipoContratoPorID(contrato.getTipo().getId());
+
+//        contrato.setCliente(cliente);
+//        contrato.setTipo(tipoContrato);
+
+        contrato.validarObjeto();
+
+        colCon.obterQtdeContratoValidoPorCliente(contrato.getValidadeInicio(), contrato.getValidadeFim(), cliente);
+
+
+        ConexaoBD conexao = new ConexaoBD();
+        contrato = colCon.inserirContrato(contrato);
+
+        conexao.getConexaoMySQL().commit();
 
 
         return contrato;

@@ -1,6 +1,10 @@
 package unioeste.contrato.contrato.bo;
 
 import unioeste.contrato.cliente.bo.Cliente;
+import unioeste.geral.infra.ServerDate;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Contrato {
     private Long id;
@@ -39,10 +43,10 @@ public class Contrato {
                 " }";
     }
 
-    public void validarObjeto()throws Exception {
-        if (cliente.getQtdeContrato() > 3){
-            throw new Exception("Cliente ja possui 3 contratos validos");
-        }
+    public void validarObjeto() throws Exception {
+//        if (cliente.getQtdeContrato() == 3){
+//            throw new Exception("Cliente ja possui 3 contratos validos");
+//        }
         if (valor <= 1.0){
             throw new Exception("Valor invalido");
         }
@@ -51,15 +55,15 @@ public class Contrato {
             throw new Exception("Descricao Invalida");
         }
 
-        String[] emissao = dataEmissao.split("/");
-        String[] inicio = validadeInicio.split("/");
-        String[] fim = validadeFim.split("/");
-        int dataEm =  Integer.parseInt(emissao[2]) * 100 + Integer.parseInt(emissao[1]) * 10 + Integer.parseInt(emissao[0]) ;
-        int dataIni =  Integer.parseInt(inicio[2]) * 100 + Integer.parseInt(inicio[1]) * 10 + Integer.parseInt(inicio[0]) ;
-        int dataFim =  Integer.parseInt(fim[2]) * 100 + Integer.parseInt(fim[1]) * 10 + Integer.parseInt(fim[0]) ;
+        DateTimeFormatter formatter = ServerDate.formatter();
+        LocalDate emissao = LocalDate.parse(dataEmissao, formatter);
+        LocalDate inicio = LocalDate.parse(validadeInicio, formatter);
+        LocalDate fim = LocalDate.parse(validadeFim, formatter);
 
 
-        if (dataIni < dataEm || dataFim < dataIni){
+
+        if(inicio.isBefore(emissao) || fim.isBefore(inicio)) {
+
             throw new Exception("Data invalida");
         }
     }

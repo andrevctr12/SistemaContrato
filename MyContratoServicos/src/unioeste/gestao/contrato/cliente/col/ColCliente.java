@@ -64,4 +64,26 @@ public class ColCliente {
         return id;
     }
 
+    public Cliente obterClientePorId(Long id) throws Exception  {
+
+        // Instância de ClienteDao
+        ClienteDao daocliente = new ClienteDao();
+
+        // Início da conexão com BD
+        ConexaoBD conexaoBD = new ConexaoBD();
+        // Cliente obtido a partir do CNPJ com auxílio da classe ClienteDao
+        Cliente cliente = daocliente.buscabyID(id, conexaoBD.getConexaoMySQL());
+
+        // Se cliente não existe, retornar erro.
+        if (cliente == null) {
+            throw new Exception ("Cliente nao existe");
+        }
+
+        // Retornar cliente.
+
+        conexaoBD.closeConexaoMySQL();
+
+        return cliente;
+    }
+
 }

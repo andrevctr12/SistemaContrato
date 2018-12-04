@@ -105,7 +105,7 @@ public class ClienteDao {
                     pessoaFisica.getGenero().setNome("M");
                 if (r.getInt("Sexo_idSexo") == 2)
                     pessoaFisica.getGenero().setNome("F");
-                if (r.getInt("Sexo_idSexo") == 2)
+                if (r.getInt("Sexo_idSexo") == 3)
                     pessoaFisica.getGenero().setNome("O");
 
                 System.out.println(pessoaFisica.getGenero().getNome());
@@ -129,6 +129,7 @@ public class ClienteDao {
                 cliente.getPessoa().getEndereco().setComplemento(r.getString("complemento"));
                 cliente.getPessoa().getEndereco().setNro(r.getInt("nro"));
                 cliente.setSenha(r.getString("senha"));
+                cliente.setQtdeContrato(r.getInt("qtdeContrato"));
 
 
 
@@ -174,6 +175,7 @@ public class ClienteDao {
                 cliente.getPessoa().getEndereco().setComplemento(r.getString("complemento"));
                 cliente.getPessoa().getEndereco().setNro(r.getInt("nro"));
                 cliente.setSenha(r.getString("senha"));
+                cliente.setQtdeContrato(r.getInt("qtdeContrato"));
 
 
 
@@ -194,7 +196,7 @@ public class ClienteDao {
             st = c.createStatement();
             ResultSet r = st.executeQuery("SELECT * FROM cliente where idCliente like '" + id + "'");
             if (r.next()) {
-                if (r.getString("cpf") != null) {
+                if (r.getString("CPF") != null) {
                     cliente = new Cliente();
 
                     cliente.setId(id);
@@ -245,6 +247,7 @@ public class ClienteDao {
                 cliente.getPessoa().getEndereco().setComplemento(r.getString("complemento"));
                 cliente.getPessoa().getEndereco().setNro(r.getInt("nro"));
                 cliente.setSenha(r.getString("senha"));
+                cliente.setQtdeContrato(r.getInt("qtdeContrato"));
 
             }
         } catch (SQLException e) {
